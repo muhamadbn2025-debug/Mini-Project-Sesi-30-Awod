@@ -273,25 +273,32 @@ text-align:center;
 padding:20px;
 }
 
-/* Responsive */
+/* RESPONSIVE DESIGN */
 
-@media (max-width:600px){
+/* Tablet */
 
-.navbar{
-flex-direction:column;
-gap:10px;
-}
+@media (max-width:1024px){
 
 .hero{
 flex-direction:column;
 text-align:center;
-padding:40px 20px;
+padding:60px 40px;
+}
+
+.hero-image img{
+width:100%;
+max-width:400px;
 }
 
 .learning{
 flex-direction:column;
 text-align:center;
-padding:40px 20px;
+padding:60px 40px;
+}
+
+.learning-img img{
+width:100%;
+max-width:400px;
 }
 
 .why-container{
@@ -305,7 +312,55 @@ align-items:center;
 }
 
 .feature-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.navbar{
+padding:20px 40px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-direction:column;
+gap:10px;
+}
+
+.hero{
+padding:40px 20px;
+}
+
+.hero-text h1{
+font-size:30px;
+}
+
+.hero-image img{
+width:100%;
+}
+
+.learning{
+padding:40px 20px;
+}
+
+.feature-container{
 grid-template-columns:1fr;
+}
+
+.course-container{
+gap:20px;
+}
+
+.why-card{
+width:100%;
 }
 
 }
